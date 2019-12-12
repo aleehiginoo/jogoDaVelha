@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    width: 30vw;
+    height: 30vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1%;
+    background: black;
+}
+
+.quadrado-jogo-velha{
+    width: auto;
+    height: auto;
+    border: none;
+    font-size: 6vw;
+    background: white;
+}
