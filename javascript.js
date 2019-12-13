@@ -124,6 +124,14 @@ function verifica(){
                 letra = "X";
             }
         }
+        else if(quadrados[0] && quadrados[1] && quadrados[2] && quadrados[3] &&
+           quadrados[4] && quadrados[5] && quadrados[6] && quadrados[7] && quadrados[8]){
+                var divVencedor =  document.getElementById('vencedor');
+                var escrever = document.createTextNode("O jogo deu Velha");
+                var paragrafo = document.createElement('span');
+                paragrafo.appendChild(escrever);
+                divVencedor.appendChild(paragrafo);
+           }
 }
 
 function reiniciar(){
