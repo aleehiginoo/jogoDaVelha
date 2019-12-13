@@ -7,16 +7,32 @@
     <script style="text/javascript" src="javascript.js" defer></script>
 </head>
 <body>
+    <div id="jogadores">
+        <div class="jogador">
+            <span>Jogador X</span>
+        </div>
+        <div class="jogador">
+            <span>Jogador O</span>
+        </div>
+    </div>
     <div id="container">
-        <button onclick="botaoClicado('0')" class="quadrado-jogo-velha" id="quadrado-0"></button>
-        <button onclick="botaoClicado('1')" class="quadrado-jogo-velha" id="quadrado-1"></button>
-        <button onclick="botaoClicado('2')" class="quadrado-jogo-velha" id="quadrado-2"></button>
-        <button onclick="botaoClicado('3')" class="quadrado-jogo-velha" id="quadrado-3"></button>
-        <button onclick="botaoClicado('4')" class="quadrado-jogo-velha" id="quadrado-4"></button>
-        <button onclick="botaoClicado('5')" class="quadrado-jogo-velha" id="quadrado-5"></button>
-        <button onclick="botaoClicado('6')" class="quadrado-jogo-velha" id="quadrado-6"></button>
-        <button onclick="botaoClicado('7')" class="quadrado-jogo-velha" id="quadrado-7"></button>
-        <button onclick="botaoClicado('8')" class="quadrado-jogo-velha" id="quadrado-8"></button>
+        <div class="placar" id="jogX"></div>
+        <div id="jogo">
+            <button onclick="botaoClicado('0')" class="quadrado-jogo-velha" id="quadrado-0"></button>
+            <button onclick="botaoClicado('1')" class="quadrado-jogo-velha" id="quadrado-1"></button>
+            <button onclick="botaoClicado('2')" class="quadrado-jogo-velha" id="quadrado-2"></button>
+            <button onclick="botaoClicado('3')" class="quadrado-jogo-velha" id="quadrado-3"></button>
+            <button onclick="botaoClicado('4')" class="quadrado-jogo-velha" id="quadrado-4"></button>
+            <button onclick="botaoClicado('5')" class="quadrado-jogo-velha" id="quadrado-5"></button>
+            <button onclick="botaoClicado('6')" class="quadrado-jogo-velha" id="quadrado-6"></button>
+            <button onclick="botaoClicado('7')" class="quadrado-jogo-velha" id="quadrado-7"></button>
+            <button onclick="botaoClicado('8')" class="quadrado-jogo-velha" id="quadrado-8"></button>
+        </div>
+        <div class="placar" id="jogO"></div>
+    </div>
+    <div id="vencedor"></div>
+    <div id="btnReiniciar">
+        <button onclick="reiniciar()">Reiniciar</button>
     </div>
 </body>
 </html>
